@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOM-Template</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- font Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Minutes Of Meeting</h1>
+    <div class="conta">
+        <div class="intg">
+            <label for="Date Time">Date & Time &#x1F4C5;</label>
+            <input type="date" name="Date" id="date">
+            &#x1F55B;
+            <input type="time" name="Time" id="time">
+        </div>
+        <div class="intg">
+            <label for="Day">Day &#x2600;</label>
+            <label id="day-out" ></label>
+        </div>
+        <div class="intg">
+            <label for="Location">Location &#x1F5FA;</label>
+            <input type="text" name="Location" id="location">
+        </div>
+        <div class="intg">
+            <label for="Topic">Topic &#x1F4A1;</label>
+            <input type="text" name="Topic" id="topic">
+        </div>
+         
+        
+        <div class="intg">
+            <h3>Attendies &#x1F9D1;&#x200D;&#x1F91D;&#x200D;&#x1F9D1;</h3>
+            <textarea name="Attendies" id="attendies" cols="30" rows="10"></textarea>
+        </div>
+        <div class="intg">
+            <h3>E-Mail &#x1F4E7;</h3>
+            <textarea name="E-Mail" id="E-Mail" cols="30" rows="10"></textarea>
+        </div>
+         
+        <div class="intg">
+            <h3>Agenda &#x1F3AF;</h3>
+            <textarea name="Agenda" id="agenda" cols="30" rows="10"></textarea>
+        </div>
+         
+        <div class="intg">
+            <h3>Next-Step &#x23ED;</h3>
+            <textarea name="Next-Step" id="nextstep" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" onclick="createtable()">Create</button>
+    </div>
+   <div id="conta-r"></div>
+    <script src="././index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
